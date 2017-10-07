@@ -6,12 +6,12 @@ function Tree() {
     this.w = 26;
     this.highlight = false;
 
-    this.hits = function (bird) {
+    this.hits = function (jellyfish) {
         score = document.getElementById('score');
         number = score.innerHTML;
 
-        if (bird.y - bird.r < this.top || bird.y + bird.r > height - this.bottom) {
-            if (bird.x + bird.r > this.x && bird.x - bird.r < this.x + this.w) {
+        if (jellyfish.y - jellyfish.r < this.top || jellyfish.y + jellyfish.r > height - this.bottom) {
+            if (jellyfish.x + jellyfish.r > this.x && jellyfish.x - jellyfish.r < this.x + this.w) {
                 score.innerHTML = parseInt(number) - 100;
                 this.highlight = true;
                 return true;
