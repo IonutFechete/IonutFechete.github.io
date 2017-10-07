@@ -11,20 +11,22 @@ var userimg;
 var msgcount = 2;
 
 function preload() {
-    // torus = loadImage('https://i.imgur.com/2wilz63.png');
-    // s1 = loadImage('https://i.imgur.com/idouxLd.png');
-    // s2 = loadImage('https://i.imgur.com/zJihfcd.png');
-    // s3 = loadImage('https://i.imgur.com/nraDhvS.png');
-    torus = loadImage('torus.png');
-    s1 = loadImage('s1.png');
-    s2 = loadImage('s2.png');
-    s3 = loadImage('s3.png');
-    // uptree = loadImage('https://i.imgur.com/S4rBJPI.png');
-    uptree = loadImage('spooky_tree_upright.png');
-    // downtree = loadImage('https://i.imgur.com/BfKbpOu.png');
-    downtree = loadImage('spooky_tree_inverted.png');
-    // bg = loadImage('https://i.imgur.com/87efIKe.jpg');
-    bg = loadImage('background.jpg');
+    torus = loadImage('https://i.imgur.com/2wilz63.png');
+    s1 = loadImage('https://i.imgur.com/idouxLd.png');
+    s2 = loadImage('https://i.imgur.com/zJihfcd.png');
+    s3 = loadImage('https://i.imgur.com/nraDhvS.png');
+
+    uptree = loadImage('https://i.imgur.com/S4rBJPI.png');
+    downtree = loadImage('https://i.imgur.com/BfKbpOu.png');
+    bg = loadImage('https://i.imgur.com/87efIKe.jpg');
+
+    // downtree = loadImage('spooky_tree_inverted.png');
+    // uptree = loadImage('spooky_tree_upright.png');
+    // torus = loadImage('torus.png');
+    // s1 = loadImage('s1.png');
+    // s2 = loadImage('s2.png');
+    // s3 = loadImage('s3.png');
+    // bg = loadImage('background.jpg');
 
 }
 
@@ -150,5 +152,8 @@ function keyPressed() {
 }
 
 function mousePressed() {
+    if(pause) {
+        pause = !pause;
+    }
     jellyfish.up();
 }
