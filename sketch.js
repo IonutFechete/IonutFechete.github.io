@@ -24,7 +24,7 @@ function preload() {
     // downtree = loadImage('https://i.imgur.com/BfKbpOu.png');
     downtree = loadImage('spooky_tree_inverted.png');
     // bg = loadImage('https://i.imgur.com/87efIKe.jpg');
-    bg = loadImage('background.jpeg');
+    bg = loadImage('background.jpg');
 
 }
 
