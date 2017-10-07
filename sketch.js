@@ -93,8 +93,8 @@ function draw() {
             score = document.getElementById('score');
             number = score.innerHTML;
 
-            if(parseInt(number) < -15000) {
-                alert('your final score was below 100000, you lose, this page will refresh. Please try again');
+            if(parseInt(number) < -25000) {
+                alert('your final score was below 25000, you lose, this page will refresh. Please try again');
                 window.location.reload(true);
             } else if (parseInt(number) > 25000) {
                 alert('Congratulations, you have beaten the game, you win! This page will refresh for a fresh start');
