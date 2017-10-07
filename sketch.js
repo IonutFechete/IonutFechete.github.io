@@ -126,7 +126,7 @@ function tutorial() {
 
     else if (frameCount == 250) {
         pause = true;
-        text("Unpause the game by pressing p (you can pause the same way", 0, height / 2);
+        text("Unpause the game by pressing p (you can pause the same way)", 0, height / 2);
     }
 
     if (frameCount < 1250 && frameCount > 900 && frameCount % 3 == 0)
