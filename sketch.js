@@ -140,7 +140,7 @@ function keyPressed() {
     if (key == " " && !pause) {
         jellyfish.up();
     }
-    if (key == "p" || key == "P") {
+    if (key == "p" || key == "P" || (pause && key == " ")) {
         pause = !pause;
         if (pause && msgcount) {
             alert("Easter egg: Try dropping an image on this page ;)");
